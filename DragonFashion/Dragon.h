@@ -10,5 +10,6 @@
 
 @interface Dragon : NSObject
 @property NSString *fullname;
+@property NSString *signatureClothingItem;
 
 @end
