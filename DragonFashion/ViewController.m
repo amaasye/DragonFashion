@@ -19,8 +19,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     Dragon *smaug = [[Dragon alloc]init];
-    smaug.fullname = @"Smaug";
-    self.dragons = [NSArray arrayWithObjects:smaug, nil];
+    smaug.fullname = @"Smaug the Magnificent";
+    Dragon *joe = [[Dragon alloc]init];
+    joe.fullname = @"Joe Dra Gon";
+    Dragon *bob = [[Dragon alloc]init];
+    bob.fullname = @"Bobo";
+    Dragon *max = [[Dragon alloc]init];
+    max.fullname = @"Max the Mighty";
+    self.dragons = [NSArray arrayWithObjects:smaug, joe, bob, max, nil];
 
 }
 
