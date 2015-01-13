@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "Dragon.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -17,7 +18,9 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.dragons = [NSArray arrayWithObjects:@"Smaug", @"Joe", nil];
+    Dragon *smaug = [[Dragon alloc]init];
+    smaug.fullname = @"Smaug";
+    self.dragons = [NSArray arrayWithObjects:smaug, nil];
 
 }
 
@@ -26,8 +29,9 @@
 }
 
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    Dragon *dragon = [self.dragons objectAtIndex:indexPath.row];
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"MyCellID" forIndexPath:indexPath];
-    cell.textLabel.text = [self.dragons objectAtIndex:indexPath.row];
+    cell.textLabel.text = dragon.fullname;
     return cell;
 }
 
