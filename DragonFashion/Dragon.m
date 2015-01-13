@@ -10,4 +10,9 @@
 
 @implementation Dragon
 
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Dragon: %@ (%@)", self.fullname, self.signatureClothingItem];
+}
+
 @end

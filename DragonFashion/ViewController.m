@@ -32,6 +32,10 @@
     max.signatureClothingItem = @"Jeans";
     self.dragons = [NSArray arrayWithObjects:smaug, joe, bob, max, nil];
 
+    for (Dragon *dragaon in self.dragons) {
+        NSLog(@"%@", dragaon);
+    }
+
 }
 
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
