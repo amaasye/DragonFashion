@@ -10,16 +10,23 @@
 
 @implementation Dragon
 
-- (NSString *)description
-{
-    return [NSString stringWithFormat:@"Dragon: %@ (%@)", self.fullname, self.signatureClothingItem];
-}
 
 -(instancetype)initWithFullname:(NSString *)fullname {
     self = [super init];
     self.fullname = fullname;
     return self;
 }
+
+-(instancetype)initWithFullname:(NSString *)fullname signatureClothingItem:(NSString *)clothingItem {
+    self = [self initWithFullname:fullname];
+    self.signatureClothingItem = clothingItem;
+    return self;
+}
+- (NSString *)description
+{
+    return [NSString stringWithFormat:@"Dragon: %@ (%@)", self.fullname, self.signatureClothingItem];
+}
+
 
 
 @end

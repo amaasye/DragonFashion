@@ -12,5 +12,6 @@
 @property NSString *fullname;
 @property NSString *signatureClothingItem;
 -(instancetype)initWithFullname:(NSString *)fullname;
+-(instancetype)initWithFullname:(NSString *)fullname signatureClothingItem:(NSString *)clothingItem;
 
 @end
