@@ -46,6 +46,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="MRd-fA-BJX" kind="show" id="Mar-Dk-0HW"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <variation key="widthClass=compact" fixedFrame="YES">
@@ -77,6 +80,23 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1197" y="337"/>
+        </scene>
+        <!--Dragon View Controller-->
+        <scene sceneID="98h-Oj-usZ">
+            <objects>
+                <viewController id="MRd-fA-BJX" customClass="DragonViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="agt-2c-zds"/>
+                        <viewControllerLayoutGuide type="bottom" id="XaV-8T-M5H"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aWN-N6-OeR">
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="g8d-LL-DEh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1894.5" y="337"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="j9s-GQ-Qlg">

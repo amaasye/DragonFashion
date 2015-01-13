@@ -15,6 +15,7 @@
 		B0F4996B1A657C7E003640BD /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = B0F499691A657C7E003640BD /* LaunchScreen.xib */; };
 		B0F499771A657C7E003640BD /* DragonFashionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F499761A657C7E003640BD /* DragonFashionTests.m */; };
 		B0F499821A658661003640BD /* Dragon.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F499811A658661003640BD /* Dragon.m */; };
+		B0F499851A65AF0F003640BD /* DragonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0F499841A65AF0F003640BD /* DragonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,6 +44,8 @@
 		B0F499761A657C7E003640BD /* DragonFashionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DragonFashionTests.m; sourceTree = "<group>"; };
 		B0F499801A658661003640BD /* Dragon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Dragon.h; sourceTree = "<group>"; };
 		B0F499811A658661003640BD /* Dragon.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Dragon.m; sourceTree = "<group>"; };
+		B0F499831A65AF0F003640BD /* DragonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DragonViewController.h; sourceTree = "<group>"; };
+		B0F499841A65AF0F003640BD /* DragonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DragonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +94,8 @@
 				B0F499801A658661003640BD /* Dragon.h */,
 				B0F499811A658661003640BD /* Dragon.m */,
 				B0F499641A657C7E003640BD /* Main.storyboard */,
+				B0F499831A65AF0F003640BD /* DragonViewController.h */,
+				B0F499841A65AF0F003640BD /* DragonViewController.m */,
 				B0F499671A657C7E003640BD /* Images.xcassets */,
 				B0F499691A657C7E003640BD /* LaunchScreen.xib */,
 				B0F4995A1A657C7E003640BD /* Supporting Files */,
@@ -226,6 +231,7 @@
 			files = (
 				B0F499631A657C7E003640BD /* ViewController.m in Sources */,
 				B0F499601A657C7E003640BD /* AppDelegate.m in Sources */,
+				B0F499851A65AF0F003640BD /* DragonViewController.m in Sources */,
 				B0F499821A658661003640BD /* Dragon.m in Sources */,
 				B0F4995D1A657C7E003640BD /* main.m in Sources */,
 			);

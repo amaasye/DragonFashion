@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "Dragon.h"
+#import "DragonViewController.h"
 
 @interface ViewController () <UITableViewDataSource, UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
@@ -40,6 +41,13 @@
     cell.textLabel.text = dragon.fullname;
     cell.detailTextLabel.text = dragon.signatureClothingItem;
     return cell;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    NSIndexPath *selectedIndexPath = self.tableView.indexPathForSelectedRow;
+    Dragon *dragonThatWasTapped = [self.dragons objectAtIndex:selectedIndexPath.row];
+    DragonViewController *vc = segue.destinationViewController;
+    vc.dragon = dragonThatWasTapped;
 }
 
 
