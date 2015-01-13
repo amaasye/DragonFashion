@@ -18,22 +18,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    Dragon *smaug = [[Dragon alloc]init];
-    smaug.fullname = @"Smaug the Magnificent";
+    Dragon *smaug = [[Dragon alloc]initWithFullname:@"Smaug"];
     smaug.signatureClothingItem = @"Snapback";
-    Dragon *joe = [[Dragon alloc]init];
-    joe.fullname = @"Joe Dra Gon";
+    Dragon *joe = [[Dragon alloc]initWithFullname:@"Joe"];
     joe.signatureClothingItem = @"Hoodie";
-    Dragon *bob = [[Dragon alloc]init];
-    bob.fullname = @"Bobo";
+    Dragon *bob = [[Dragon alloc]initWithFullname:@"bob"];
     bob.signatureClothingItem = @"Leather Jacket";
-    Dragon *max = [[Dragon alloc]init];
-    max.fullname = @"Max the Mighty";
+    Dragon *max = [[Dragon alloc]initWithFullname:@"Max"];
     max.signatureClothingItem = @"Jeans";
     self.dragons = [NSArray arrayWithObjects:smaug, joe, bob, max, nil];
 
-    for (Dragon *dragaon in self.dragons) {
-        NSLog(@"%@", dragaon);
+    for (Dragon *dragon in self.dragons) {
+        NSLog(@"%@", dragon);
     }
 
 }

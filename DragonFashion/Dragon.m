@@ -15,4 +15,11 @@
     return [NSString stringWithFormat:@"Dragon: %@ (%@)", self.fullname, self.signatureClothingItem];
 }
 
+-(instancetype)initWithFullname:(NSString *)fullname {
+    self = [super init];
+    self.fullname = fullname;
+    return self;
+}
+
+
 @end
